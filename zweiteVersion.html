@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='svgg.js' type='text/javascript'></script>
+    <script src='ExpenseChart.js' type='text/javascript'></script>
+    <script src='Expense.js' type='text/javascript'></script>
+    <link rel='stylesheet' href='zweiteVersion.css' />
+    
+    
+    <title>Anwendungzweiteversion</title>
+</head>
+<p>Lade deine Datei hoch</p>
+<body oninput="Bars();" >
+    <!--<p><input id ="search" placeholder="In bar suchen" oninput = "find();" autofocus></p>-->
+    <p><input id="inputfile" type="file" oninput="load();"></p>
+    <div id="tooltip" style="
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 30px;
+    visibility: hidden;
+    pointer-events: none;
+    border-radius: 4px;
+    z-index: 1000;
+  "><span id="tooltipText"></span></div> 
+
+</body>
+</html>
